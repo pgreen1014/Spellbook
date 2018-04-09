@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Spellbook</string>
+    <string name="ritual">(ritual)</string>
+    <string name="casting_time">CASTING TIME</string>
+    <string name="range">RANGE</string>
+    <string name="components">COMPONENTS</string>
+    <string name="duration">DURATION</string>
+    <string name="at_higher_levels">At Higher Levels</string>
+    <string name="all_spells">All Spells</string>
+    <string name="bard">Bard</string>
+    <string name="cleric">Cleric</string>
+    <string name="druid">Druid</string>
+    <string name="paladin">Paladin</string>
+    <string name="ranger">Ranger</string>
+    <string name="sorcerer">Sorcerer</string>
+    <string name="warlock">Warlock</string>
+    <string name="wizard">Wizard</string>
+    <string name="hint_search_spell_name">Search Spell Name</string>
+    <string name="hint_search_spell_book">Search Spellbook</string>
+    <string name="menu_nav_spellbooks">Spellbooks</string>
+    <string name="menu_nav_spells">Spells</string>
+</resources>

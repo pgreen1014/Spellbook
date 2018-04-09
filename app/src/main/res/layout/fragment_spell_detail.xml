@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spell_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cleric_colorPrimary">
+
+    <TextView
+        android:id="@+id/spell_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:padding="2dp"
+        android:background="@drawable/background_spell_name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:text="THAUMATURGY"/>
+
+    <LinearLayout
+        android:id="@+id/school_and_level_container"
+        android:layout_below="@id/spell_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/spell_detail_spellLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:text="cantrip"/>
+
+        <TextView
+            android:id="@+id/spell_detail_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:text="Transmutation"/>
+
+        <TextView
+            android:id="@+id/spell_detail_ritual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="@string/ritual"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/school_and_level_container"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/spell_detail_castingTime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/cleric_colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/casting_time"/>
+
+            <TextView
+                android:id="@+id/spell_detail_castingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                tools:text="1 action"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginStart="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/spell_detail_range_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/cleric_colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/range"/>
+
+            <TextView
+                android:id="@+id/spell_detail_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                tools:text="30 feet"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_row"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/spell_detail_components_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/cleric_colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/components"/>
+
+            <TextView
+                android:id="@+id/spell_detail_components"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                tools:text="V"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginStart="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/spell_detail_duration_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/cleric_colorPrimary"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/duration"/>
+
+                <TextView
+                    android:id="@+id/spell_detail_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/spell_detail_duration_title"
+                    tools:text="Up to 1 minute"/>
+
+                <TextView
+                    android:id="@+id/spell_detail_concentration_symbol"
+                    android:background="@drawable/background_concentration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="1dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:text="C"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spell_detail_spellDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/second_row"
+        android:layout_above="@+id/spell_detail_higherLevelDescription_title"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        tools:text="You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range\n\nYour voice booms..."/>
+
+    <TextView
+        android:id="@id/spell_detail_higherLevelDescription_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_above="@+id/spell_detail_higherLevelDescription"
+        android:layout_centerHorizontal="true"
+        android:text="@string/at_higher_levels"/>
+
+    <TextView
+        android:id="@id/spell_detail_higherLevelDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_above="@+id/spell_detail_clericDomain"
+        android:background="@drawable/background_spell_description"
+        android:padding="6dp"
+        android:textColor="#000000"
+        tools:text="The Spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)"/>
+
+    <TextView
+        android:id="@id/spell_detail_clericDomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="TEMPEST"/>
+
+</RelativeLayout>

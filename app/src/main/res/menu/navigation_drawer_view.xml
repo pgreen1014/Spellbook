@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_menu_navigation_item_spellbooks"
+            android:title="@string/menu_nav_spellbooks"/>
+
+        <item
+            android:id="@+id/main_menu_navigation_item_spells"
+            android:title="@string/menu_nav_spells"
+            app:itemTextColor="#FFFFFF"/>
+    </group>
+
+</menu>
